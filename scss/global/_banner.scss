@@ -1,0 +1,20 @@
+.banner {
+	padding: 0 2%;
+	overflow-x: hidden;
+
+	.owl-carousel {
+		width: 100%;
+	}
+
+	&_item {
+		width: 100%;
+		height: auto;
+	}
+
+	&_img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+

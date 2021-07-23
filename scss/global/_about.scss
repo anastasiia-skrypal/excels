@@ -1,0 +1,114 @@
+.about {
+
+	&_title {
+		width: 90%;
+
+		@include respond-to(mobile) {
+			font-size: 10vw;
+			line-height: 12vw;
+			margin: 10px 0;
+		}
+	}
+
+	&_list {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+
+		@include respond-to(mobile) {
+			flex-wrap: nowrap;
+			flex-direction: column;
+		}
+	}
+
+	&_item {
+		width: 43%;
+		padding: 10px 10px;
+
+		@include respond-to(mobile) {
+			width: 95%;
+		}
+	}
+
+	&_item:nth-child(2) {
+		position: relative;
+
+		&:after {
+			display: block;
+			width: 90%;
+			content: '';
+			position: absolute;
+			top: 0;
+			height: 100%;
+			background: url(../img/cards.png) center center;
+			background-size: 100% 100%;
+			opacity: 0.3;
+			z-index: -1;
+			overflow: hidden;
+		}
+		
+	}
+
+	&_item:nth-child(3) {
+		position: relative;
+		order: 1; 
+
+		&:after {
+			display: block;
+			width: 90%;
+			content: '';
+			position: absolute;
+			top: 0;
+			height: 100%;
+			background: url(../img/slot.png) center center;
+			background-size: 100% 100%;
+			opacity: 0.3;
+			z-index: -1;
+			overflow: hidden;
+		}
+	}
+
+	&_img {
+		width: 90%;
+		height: auto;
+		display: flex;
+		justify-content: center;
+		text-align: center;
+
+		@include respond-to(mobile) {
+			width: 100%;
+		}
+	}
+
+	&_subarticle {
+		color: $white01;
+		font-size: 2vw;
+		line-height: 2.5vw;
+		text-align: left;
+		padding: 0px 0px 10px 35px;
+
+		@include respond-to(mobile) {
+			font-size: 5vw;
+			line-height: 6vw;
+		}
+
+		&::before {
+			display: inline-block;
+			content: '';
+			width: 35px;
+			height: 35px;
+			background: url(../img/done-01.png) center center;
+		}
+	}
+
+	&_button {
+		display: inline-block;
+		padding: 0 40px;
+		line-height: 3rem;
+		margin-right: 3px;
+		width: 200px;
+		font-size: 1.2rem;
+		margin: 25px 0;
+	}
+
+}

@@ -1,0 +1,60 @@
+html {
+  font-size: ($root-font-size / 16px) * 100%;
+}
+
+body, p, ul, li, h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+ul, li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	cursor: pointer;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+body {
+	font-family: 'Appetite-Italic';
+	background: url(../img/Background.png) center center no-repeat;
+	background-size: 100% 100%;
+}
+
+
+h1, h2, h3 {
+  color: $orange01;
+  text-shadow: 1px 2px 3px #666;
+}
+
+.button {
+	padding: 10px;
+	line-height: 30px;
+	margin-left: 10px;
+	width: 150px;
+	font-size: 20px;
+	color: $white01;
+	text-shadow: 1px 2px 3px #666;
+	border: 1px solid $orange01;
+	border-radius: 4px;
+	background: rgb(232,114,43);
+	background: linear-gradient(0deg, rgba(232,114,43,1) 0%, rgba(236,129,29,1) 45%, rgba(239,157,54,1) 100%);
+}
+
+.hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+}
