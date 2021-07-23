@@ -1,0 +1,56 @@
+.form {
+	position: absolute;
+	top: 0;
+	width: 300px;
+	left: 50%;
+	transform: translate(-50%, 0);
+	background-color: #5b5b5b;
+	border: 1px solid $white01;
+	border-radius: 8px 8px;
+	font-family: "Roboto";
+	color: rgb(91, 91, 91);
+	text-align: center;
+	padding-bottom: 20px;
+
+
+	&_legend {
+		background: rgb(232,114,43);
+		background: linear-gradient(0deg, rgba(232,114,43,1) 0%, rgba(236,129,29,1) 45%, rgba(239,157,54,1) 100%);
+		color: $white01;
+		text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.75);
+		height: 50px;
+		line-height: 50px;
+		font-size: 25px;
+		border-radius: 8px 8px 0 0;
+	}
+
+	input, textarea {
+		font-family: "Roboto";
+		color: rgb(91, 91, 91);
+		text-align: center;
+		font-size: 15px;
+		border-radius: 3px 3px;
+		border: none;
+		width: 90%;
+	}
+}
+
+#name, #email, #textarea {
+	margin-top: 10px;
+}
+
+#submit {
+	margin: 10px 0;
+	line-height: 30px;
+	height: 30px;
+	display: block;
+	margin: 0 auto;
+	background: rgb(232,114,43);
+	background: linear-gradient(0deg, rgba(232,114,43,1) 0%, rgba(236,129,29,1) 45%, rgba(239,157,54,1) 100%);
+	border-radius: 3px 3px;
+	border: none;
+	color: $white01;
+	text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.75);
+	padding: 0 15px;
+}
+

@@ -992,3 +992,68 @@ h1, h2, h3 {
   text-align: center;
   margin-bottom: 100px;
 }
+
+.form {
+  position: absolute;
+  top: 0;
+  width: 300px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  background-color: #5b5b5b;
+  border: 1px solid #ffffff;
+  -webkit-border-radius: 8px 8px;
+          border-radius: 8px 8px;
+  font-family: "Roboto";
+  color: #5b5b5b;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.form_legend {
+  background: #e8722b;
+  background: -webkit-gradient(linear, left bottom, left top, from(#e8722b), color-stop(45%, #ec811d), to(#ef9d36));
+  background: -o-linear-gradient(bottom, #e8722b 0%, #ec811d 45%, #ef9d36 100%);
+  background: linear-gradient(0deg, #e8722b 0%, #ec811d 45%, #ef9d36 100%);
+  color: #ffffff;
+  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.75);
+  height: 50px;
+  line-height: 50px;
+  font-size: 25px;
+  -webkit-border-radius: 8px 8px 0 0;
+          border-radius: 8px 8px 0 0;
+}
+
+.form input, .form textarea {
+  font-family: "Roboto";
+  color: #5b5b5b;
+  text-align: center;
+  font-size: 15px;
+  -webkit-border-radius: 3px 3px;
+          border-radius: 3px 3px;
+  border: none;
+  width: 90%;
+}
+
+#name, #email, #textarea {
+  margin-top: 10px;
+}
+
+#submit {
+  margin: 10px 0;
+  line-height: 30px;
+  height: 30px;
+  display: block;
+  margin: 0 auto;
+  background: #e8722b;
+  background: -webkit-gradient(linear, left bottom, left top, from(#e8722b), color-stop(45%, #ec811d), to(#ef9d36));
+  background: -o-linear-gradient(bottom, #e8722b 0%, #ec811d 45%, #ef9d36 100%);
+  background: linear-gradient(0deg, #e8722b 0%, #ec811d 45%, #ef9d36 100%);
+  -webkit-border-radius: 3px 3px;
+          border-radius: 3px 3px;
+  border: none;
+  color: #ffffff;
+  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.75);
+  padding: 0 15px;
+}
