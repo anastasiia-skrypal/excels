@@ -54,11 +54,15 @@
 
 	&_article {
 		position: relative;
+		
+		@include respond-to(mobile) {
+			padding: 0 50px;
+		}	
 
 		&::before {
 			display: block;
 			position: absolute;
-			top: -100px;
+			top: -150px;
 			left: 0;
 			content: '';
 			width: 95%;

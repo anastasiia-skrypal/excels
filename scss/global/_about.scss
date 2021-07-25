@@ -97,7 +97,8 @@
 			content: '';
 			width: 35px;
 			height: 35px;
-			background: url(../img/done-01.png) center center;
+			background: url(../img/done.png) center center;
+			background-size: 100% 100%;
 		}
 	}
 
@@ -109,6 +110,12 @@
 		width: 200px;
 		font-size: 1.2rem;
 		margin: 25px 0;
+	}
+
+	&_article {
+		@include respond-to(mobile) {
+			padding: 0 30px;
+		}
 	}
 
 }
